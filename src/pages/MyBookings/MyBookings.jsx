@@ -1,9 +1,9 @@
 import { Box, Typography, Container, Stack } from "@mui/material";
-import HospitalCard from "../components/HospitalCard/HospitalCard";
+import HospitalCard from "../../components/HospitalCard/HospitalCard";
 import { useEffect, useState } from "react";
-import cta from "../assets/cta.png";
-import SearchBar from "../components/SearchBar/SearchBar";
-import NavBar from "../components/NavBar/NavBar";
+import cta from "../../assets/cta.png";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import NavBar from "../../components/NavBar/NavBar";
 
 export default function MyBookings() {
   const [bookings, setBookings] = useState([]);
