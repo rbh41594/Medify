@@ -1,13 +1,20 @@
 import { Link, Stack } from "@mui/material";
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'; // Changed the icon for uniqueness
 
 export default function FooterLink({ children }) {
     return (
-        <Link underline="none" color='#fff' fontWeight={300} fontSize={14}>
-            <Stack direction='row' gap={0.5}>
-                <KeyboardArrowRightIcon />
+        <Link
+          underline="hover" 
+          sx={{
+            color: '#ffffff', 
+            fontWeight: 400,   
+            fontSize: '1rem'  
+          }}
+        >
+            <Stack direction="row" spacing={1} alignItems="center"> 
+                <ArrowForwardIosIcon fontSize="small" />  
                 {children}
             </Stack>
         </Link>
-    )
+    );
 }

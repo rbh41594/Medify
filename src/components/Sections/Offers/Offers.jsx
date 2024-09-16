@@ -49,6 +49,20 @@ export default function Offers() {
                         <Box component={'img'} src={offer2} />
                     </SwiperSlide>
 
+                    <SwiperSlide>
+                        <Box component={'img'} src={offer2} />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <Box component={'img'} src={offer2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Box component={'img'} src={offer2} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Box component={'img'} src={offer2} />
+                    </SwiperSlide>
+
                 </Swiper>
             </Container>
         </Box>

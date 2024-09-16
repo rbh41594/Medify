@@ -8,11 +8,20 @@ export default function HeroSlider() {
     return (
         <Swiper>
             <SwiperSlide>
-                <Stack direction={{ xs: 'column', md: "row" }} spacing={6} alignItems="center" pt={2}>
+                <Stack
+                    direction={{ xs: 'column', md: 'row' }}  
+                    spacing={6} 
+                    alignItems="center"  
+                    paddingTop={2} 
+                >
                     <Box>
-                        <Typography variant='h3' component='h1'>Skip the travel! Find Online</Typography>
-                        <Typography variant='h1' component='h1' mb={1}>Medical <span style={{ color: '#2AA7FF' }}>Centers</span></Typography>
-                        <Typography color="#5C6169" fontSize={{ md: 20 }} mb={3}>
+                        <Typography variant='h3' component='h1'>
+                            Skip the travel! Find Online
+                        </Typography>
+                        <Typography variant='h1' component='h1' marginBottom={1}>  
+                            Medical <span style={{ color: '#2AA7FF' }}>Centers</span>
+                        </Typography>
+                        <Typography color="#5C6169" fontSize={{ md: 20 }} marginBottom={3}> 
                             Connect instantly with a 24x7 specialist or choose to video visit a particular doctor.
                         </Typography>
                         <Link to='/search'>
@@ -22,12 +31,14 @@ export default function HeroSlider() {
                         </Link>
                     </Box>
                     <Box
-                        component={'img'}
+                        component='img'
                         src={img}
-                        width={{ xs: 1, md: "50%" }}
+                        sx={{
+                            width: { xs: '100%', md: '50%' },  
+                        }}
                     />
                 </Stack>
             </SwiperSlide>
         </Swiper>
-    )
+    );
 }

@@ -2,37 +2,36 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Search from "./pages/Search/Search.jsx";
+import SearchPage from "./pages/Search/Search.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home/Home.jsx";
+import HomePage from "./pages/Home/Home.jsx";
 import { createTheme, ThemeProvider } from "@mui/material";
-import MyBookings from "./pages/MyBookings/MyBookings.jsx";
+import BookingsPage from "./pages/MyBookings/MyBookings.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App />,  // Main layout component
     children: [
       {
         path: "search",
-        element: <Search />,
+        element: <SearchPage />,  // Search page route
       },
       {
         path: "my-bookings",
-        element: <MyBookings />,
+        element: <BookingsPage />,  // My bookings page route
       },
       {
-        path: "/",
-        element: <Home />,
+        path: "/",  // Default route
+        element: <HomePage />,  // Home page route
       },
     ],
   },
 ]);
 
-//Theme object created using createTheme to override the CSS styles of MUI library
 export const theme = createTheme({
   typography: {
-    fontFamily: "Poppins , sans-serif",
+    fontFamily: "Poppins, sans-serif",
   },
   palette: {
     primary: {
@@ -136,6 +135,7 @@ theme.typography.h3 = {
   },
 };
 
+// Render the application with theme provider and router
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

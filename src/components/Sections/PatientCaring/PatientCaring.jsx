@@ -31,7 +31,7 @@ export default function PatientCaring() {
                         </Typography>
 
                         <List sx={{ fontSize: { xs: 12, md: 18 } }}>
-                            <ListItem disableGutters>
+                            <ListItem>
                                 <ListItemIcon sx={{ minWidth: 32 }}>
                                     <Box component='img' src={tick} height={22} width={22} />
                                 </ListItemIcon>
@@ -40,7 +40,7 @@ export default function PatientCaring() {
                                     primaryTypographyProps={{ fontSize: { xs: 14, md: 18 }, fontWeight: 500, color: '#1B3C74' }}
                                 />
                             </ListItem>
-                            <ListItem disableGutters>
+                            <ListItem>
                                 <ListItemIcon sx={{ minWidth: 32 }}>
                                     <Box component='img' src={tick} height={22} width={22} />
                                 </ListItemIcon>
@@ -49,7 +49,7 @@ export default function PatientCaring() {
                                     primaryTypographyProps={{ fontSize: { xs: 14, md: 18 }, fontWeight: 500, color: '#1B3C74' }}
                                 />
                             </ListItem>
-                            <ListItem disableGutters>
+                            <ListItem>
                                 <ListItemIcon sx={{ minWidth: 32 }}>
                                     <Box component='img' src={tick} height={22} width={22} />
                                 </ListItemIcon>
