@@ -3,7 +3,7 @@ import playstore from "../../../assets/playstore.png";
 import apple from "../../../assets/apple-logo.png";
 import arrow from "../../../assets/down-arr.png";
 import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
-import SmsForm from "./SmsForm";
+import SMSForm from "./SMSForm";
 
 //download app component to render input details using SmsForm component
 export default function DownloadApp() {
@@ -41,7 +41,7 @@ export default function DownloadApp() {
                 top={50}
               />
 
-              <SmsForm />
+              <SMSForm />
 
               <Stack
                 direction={{ xs: "column", md: "row" }}
